@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शायरी संग्रह - Shayri Collection</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">शायरी संग्रह</h1>
+            <p class="subtitle">दिल की बात, शब्दों में</p>
+        </header>
+
+        <main class="main-content">
+            <div class="shayri-container">
+                <div class="shayri-card" id="shayri-card">
+                    <div class="shayri-text" id="shayri-text">
+                        <!-- Shayri content will be loaded here -->
+                    </div>
+                    
+                    <div class="card-actions">
+                        <button class="copy-btn" id="copy-btn" title="कॉपी करें">
+                            <i class="fas fa-copy"></i>
+                            <span>कॉपी करें</span>
+                        </button>
+                        
+                        <div class="social-buttons">
+                            <button class="social-btn facebook" id="share-facebook" title="Facebook पर शेयर करें">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button class="social-btn whatsapp" id="share-whatsapp" title="WhatsApp पर शेयर करें">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                            <button class="social-btn twitter" id="share-twitter" title="Twitter पर शेयर करें">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button class="social-btn telegram" id="share-telegram" title="Telegram पर शेयर करें">
+                                <i class="fab fa-telegram-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navigation-buttons">
+                    <button class="nav-btn prev-btn" id="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                        पिछली
+                    </button>
+                    <button class="nav-btn next-btn" id="next-btn">
+                        अगली
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="shayri-counter">
+                    <span id="current-shayri">1</span> / <span id="total-shayri">10</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 शायरी संग्रह। सभी अधिकार सुरक्षित।</p>
+        </footer>
+    </div>
+
+    <!-- Success/Error Messages -->
+    <div class="toast" id="toast">
+        <span id="toast-message"></span>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
